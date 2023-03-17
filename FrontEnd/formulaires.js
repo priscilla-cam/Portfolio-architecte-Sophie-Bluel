@@ -1,15 +1,19 @@
-let loginform = document.getElementById('login_form');
+const email = document.querySelector(".email")
+const motdepasse = document.querySelector(".motdepasse")
+const URL = "indexmodif.html";
+const a = document.createElement('a');
+const test = document.querySelector('#test')
 
+test.addEventListener("click", Connexion())
 
-loginform.addEventListener('submit', function (e) { }); {
+function Connexion() {
 
-    let email = document.getElementById('email');
-    let motdepasse = document.getElementById('motdepasse');
+    if ((login_form.email.value == "sophie.bluel@test.tld") && (login_form.motdepasse.value == "S0phie")) {
+        link(URL);
+    }
 
-    if (email.value.trim() == "sophie.bluel@test.tld" && motdepasse.value.trim() == S0phie
-    ) {
-        let myError = document.getElementById('error');
-        myError.innerHTML = "Email ou mot de passe incorrect";
-        myError.style.color = 'red';
+    else {
+        alert("Email ou Mot de passe incorrect");
+        console.log("E-mail ou Mot de passe incorrect");
     }
 }
