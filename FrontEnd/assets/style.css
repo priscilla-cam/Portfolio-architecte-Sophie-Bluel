@@ -136,16 +136,14 @@ table {
 }
 
 /** filtres**/
-.filters {
+
+.filtres {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.Tous,
-.Objets,
-.Appartements,
-.Hotels {
+.filtres-clique {
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
@@ -156,12 +154,10 @@ table {
 	margin-top: 20px;
 	color: #1D6154;
 	font-size: medium;
+	cursor: pointer;
 }
 
-.Tous:active,
-.Objets:active,
-.Appartements:active,
-.Hotels:active {
+.filtres-clique:active {
 	background-color: #1D6154;
 	color: white;
 }
@@ -441,4 +437,29 @@ footer nav ul {
 	display: flex;
 	justify-content: flex-end;
 	margin: 2em
+}
+
+.modal-wrapper {
+	background-color: white;
+	padding: 20px;
+	width: 400px;
+	height: 500px;
+}
+
+.modal {
+	position: sticky;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.travaux-modal {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.js-modal-close {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
 }

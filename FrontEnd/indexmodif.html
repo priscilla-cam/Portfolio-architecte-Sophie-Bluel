@@ -12,6 +12,7 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="./assets/style.css">
     <script type="module" src="travaux.js"></script>
+    <script type="module" src="app.js"></script>
     <script src="https://kit.fontawesome.com/6b6f03f4e7.js" crossorigin="anonymous"></script>
 </head>
 
@@ -66,35 +67,36 @@
             </article>
 
         </section>
+
         <section id="portfolio">
 
             <div class="projets_modifier">
                 <h2>Mes Projets</h2>
                 <div class="modifier_travaux">
                     <i class="fa-regular fa-pen-to-square"></i>
-                    <p class="nom_modifier">modifier</p>
+                    <a href="#modal1" class="js-modal">modifier</a>
+                    <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="titlemodal"
+                        style="display: none">
+                        <div class="modal-wrapper js-modal-stop">
+                            <h4 id="titlemodal">Gallerie photo</h4>
+                            <p class="travaux-modal"></p>
+                            <button class="js-modal-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                        </div>
+                    </aside>
                 </div>
             </div>
 
-            <div class="liste_filtres">
-                <article class="filtre">
-                    <h4 class="Tous">Tous</h4>
-                </article>
-                <article class="filtre">
-                    <h4 class="Objets">Objets</h4>
-                </article>
-                <article class="filtre">
-                    <h4 class="appartements">Appartements</h4>
-                </article>
-                <article class="filtre">
-                    <h4 class="hotelsrestaurants">Hôtels & restaurants</h4>
-                </article>
+            <div class="filtres">
             </div>
 
             <br>
             <div class="gallery">
 
             </div>
+
         </section>
         <section id="contact">
             <h2>Contact</h2>
