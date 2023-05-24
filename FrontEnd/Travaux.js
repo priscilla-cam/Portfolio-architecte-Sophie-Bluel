@@ -1,3 +1,15 @@
+// Import de la liste de tous les travaux du FETCH sur l'API, à partir de FETCHDATAS.JS
+import { works } from "./fetchDatas.js";
+// Import de la liste de toutes les catégories de travaux du FETCH sur l'API, à partir de FETCHDATAS.JS
+import { categories } from "./fetchDatas.js";
+// Import de la fonction "editMode" à partir de "editMode.js" permettant d'actualiser la page INDEX.HTML si authentifié.
+import { editMode } from "./editMode.js";
+// Import de la fonction "modale" à partir de "modale.js" permettant de gérer l'affichage de la MODALE dans INDEX.HTML.
+import { modale } from "./modale.js";
+// Export de la fonction "generateGallery" dans "modale.js" pour actualisation de l'affichage des "Galleries" après ajout ou suppression d'un projet.
+export { generateGallery };
+
+
 async function recupererTousTravauxApi() {
     const reponse = await fetch('http://localhost:5678/api/works', {
         method: 'GET',
@@ -73,3 +85,9 @@ function ajouteEventSurFiltres() {
         ajouteTravauxAuDom(resultats);
     })
 }
+
+// Appel de la fonction "editMode" de "editMode.js" qui permet d'actualiser la page INDEX.HTML si authentifié.
+editMode();
+
+// Appel de la fonction de gestion de la "Modale" dans "modale.JS" qui permet de gérer les projets si authentifié.
+modale();
