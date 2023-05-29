@@ -1,9 +1,9 @@
 // Import de la liste de tous les travaux à partir du FETCH sur l'API, de "FETCHDATAS.JS".
-import { works } from "./fetchDatas";
+import { works } from "./fetchDatas.js";
 // Import de la list des "CATEGORIES" à partir du FETCH sur l'API, de "FETCHDATA.JS".
-import { categories } from "./fetchDatas";
+import { categories } from "./fetchDatas.js";
 // Import de la fonction generateGallery à partir de "gallerie.js" pour actualiser l'affichage après ajout ou suppression d'un projet.
-import { generateGallery } from "./Travaux"
+import { generateGallery } from "./gallerie.js"
 
 
 // Fonction permettant la gestion de l'ouverture et fermeture de la MODALE en "EDITMODE".
@@ -242,4 +242,3 @@ async function addWork() {
         return alert("Échec de la l'ajout du projet");
     };
 };
-
