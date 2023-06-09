@@ -4,6 +4,7 @@ export function editMode() {
 
     if (authentificationState === "true") {
         editModeActivation("flex");
+        document.getElementById('loginn').style.display = "none";
     } else {
         editModeActivation("none");
     }
@@ -17,3 +18,20 @@ function editModeActivation(state) {
         editModeElement[i].style.display = state;
     }
 };
+
+//function deconnected() {
+  //  const logoutUser = document.querySelector("#logout");
+
+
+    //logoutUser.addEventListener("click", function (e) {
+      //  e.preventDefault();
+
+        //authentificationState.removeItem
+
+    //});
+//}
+
+
+
+
+

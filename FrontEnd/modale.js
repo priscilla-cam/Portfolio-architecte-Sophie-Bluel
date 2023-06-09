@@ -46,10 +46,7 @@ returnModalButton.addEventListener("click", function () {
     const modalFormSwitch = document.querySelector(".modal-content-form");
     modalFormSwitch.style.display = "none";
 });
-
-
-// Génération de la "GALLERY" de la MODALE.
-
+// Génération de la "GALLERY" de la MODALE :
 // Fonction pour générer la "GALLERY" de la MODALE.
 function generateGalleryModale(works) {
     // Parcours des données WORKS pour les ajouter au HTML de la MODALE.
@@ -122,7 +119,7 @@ async function deleteWork(workId) {
         works.splice(workIndexToRemove, 1);
 
     } else {
-        return alert("Échec de la suppresion du projet");
+        return alert("Échec de la suppression du projet");
     };
 };
 
