@@ -19,18 +19,6 @@ function editModeActivation(state) {
     }
 };
 
-//function deconnected() {
-  //  const logoutUser = document.querySelector("#logout");
-
-
-    //logoutUser.addEventListener("click", function (e) {
-      //  e.preventDefault();
-
-        //authentificationState.removeItem
-
-    //});
-//}
-
 
 
 
