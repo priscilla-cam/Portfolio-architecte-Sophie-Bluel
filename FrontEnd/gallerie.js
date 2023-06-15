@@ -84,3 +84,12 @@ editMode();
 
 // Appel de la fonction de gestion de la "Modale" dans "modale.JS" qui permet de gérer les projets si authentifié.
 modale();
+
+//Fonction deconnexion
+const logoutButton = document.querySelector("#logout");
+
+logoutButton.addEventListener("click", function () {
+
+    sessionStorage.removeItem("authentificationToken", authentificationToken);
+    window.location.replace("index.html");
+});

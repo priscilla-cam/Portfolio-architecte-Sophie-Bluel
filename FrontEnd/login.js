@@ -35,3 +35,4 @@ formInfos.addEventListener("submit", async function (event) {
     wrongUserNotification.innerText = "Nom d'utilisateur ou mot de passe incorrect.";
   };
 });
+

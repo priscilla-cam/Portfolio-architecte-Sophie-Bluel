@@ -123,7 +123,6 @@ async function deleteWork(workId) {
     };
 };
 
-
 // Passage de la "MODALE" en mode formulaire d'ajout de projet si clique sur le bouton "Ajouter une photo" de la partie "Gallerie / suppresion de projet" de la "MODALE".
 // Ajout du Listener sur le bouton "Ajouter une photo" et SWITCH de la "MODALE" si cliqué.
 const addPhotoButton = document.querySelector(".add-photo-button");

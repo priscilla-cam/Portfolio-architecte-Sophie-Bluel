@@ -19,6 +19,18 @@ function editModeActivation(state) {
     }
 };
 
+//Fonction deconnexion
+const logoutButton = document.querySelector("#logout");
+
+
+logoutButton.addEventListener("click", function () {
+    const authentificationToken = sessionStorage.getItem("authentificationToken");
+
+    sessionStorage.removeItem("authentificationToken");
+    editModeActivation("none");
+    document.getElementById('loginn').style.display = "flex";
+
+});
 
 
 
