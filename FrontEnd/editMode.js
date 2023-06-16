@@ -25,8 +25,10 @@ const logoutButton = document.querySelector("#logout");
 
 logoutButton.addEventListener("click", function () {
     const authentificationToken = sessionStorage.getItem("authentificationToken");
+    const authentificationState = sessionStorage.getItem("authentificationState");
 
     sessionStorage.removeItem("authentificationToken");
+    sessionStorage.removeItem("authentificationState");
     editModeActivation("none");
     document.getElementById('loginn').style.display = "flex";
 
